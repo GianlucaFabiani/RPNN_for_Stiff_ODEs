@@ -15,10 +15,10 @@ https://doi.org/10.48550/arXiv.2203.05337
 The main function is ada_RPNN_DAE.m (Adaptive time step solver for both ODEs and DAEs)
 
 Here we have 4 example:
-1) van der Pol Equations
-2) Lotka-Volterra ODEs
-3) Robertson DAEs
-4) 
+1) van der Pol Equations (vdpp.m)
+2) Lotka-Volterra ODEs  (LotkaVolterra.m)
+3) Robertson DAEs (Robertson_DAE.m)
+4) A mechanics non autonomous index-1 DAEs model (ex11ode.m) [part of the benchmark problems presented in Shampine (1999), Solving Index-1 DAEs in MATLAB and Simulink]
 
 The ODEs function handles are defined in their respective <file>.m and their Jacobian in <file>_jac.m
 To run the examples call <file>_main.m
