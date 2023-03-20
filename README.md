@@ -16,7 +16,7 @@ The main function is ada_RPNN_DAE.m (Adaptive time step solver for both ODEs and
 
 Here we have 4 example:
 1) van der Pol Equations (vdpp.m)
-2) Lotka-Volterra ODEs  (LotkaVolterra.m)
+2) Lotka-Volterra ODEs  (LotkaVolterra.m) [as proposed in deepxde python library]
 3) Robertson DAEs (Robertson_DAE.m)
 4) A mechanics non autonomous index-1 DAEs model (ex11ode.m) [part of the benchmark problems presented in Shampine (1999), Solving Index-1 DAEs in MATLAB and Simulink]
 
