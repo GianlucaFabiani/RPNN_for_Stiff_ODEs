@@ -67,5 +67,5 @@ To run the examples call <file>_main.m
   INFO.num_fun_eval: number of function evaluations
   INFO.num_Jac_solv: number of jacobian inversions(pinv/QR decompositions)
 
-# Create_Jac and Create_Jac_Sparse
-Are two auxiliary .c code implemented by mex, for constructing the Jacobian matrix of the Newton iterations.
+# Jac_Create and Jac_Create_Sparse
+Are two auxiliary subroutines, written in .c and implemented in Matlab by mex, for constructing the Jacobian matrix of the Newton iterations.
