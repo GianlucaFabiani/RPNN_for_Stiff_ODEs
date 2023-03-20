@@ -1,4 +1,4 @@
-% Van der pol
+% Lotka Volterra ODEs
 % Initialization
 mex Jac_create.c -R2018a %compile mex file
 pause(0.0001)
@@ -14,22 +14,22 @@ reltolRPNN=1e-3;
 abstolODE=reltolODE*1e-3;
 abstolRPNN=reltolRPNN*1e-3;
 
-%SELECT for vary stiffness of van der Pol
-mu=100; %van der Pol parameter %10,100,1000,10000
+U=200;
+R=20; %Lotka-Volterra Parameters
 %
 t0=0; %initial time
-tf=3*mu; %final time
-u0=[2;0]; %initial conditions
+tf=1; %final time
+u0=[100/U;15/U]; %initial conditions
 %
-f=@(t,y) vdpp(t,y,mu); %ODE system
-derf=@(t,y) vdp_jac(t,y,mu); %Jacobian (For RPNN the Jacobian need to be transposed)
+f=@(t,y) LotkaVolterra(t,y,U,R); %ODE system
+derf=@(t,y) LotkaVolterra_jac(t,y,U,R); %Jacobian (For RPNN the Jacobian need to be transposed)
 %
 nEq=max(size(u0)); %number of equations
-var_name={'u_1','u_2'}; %name of variables
+var_name={'r','p'}; %name of variables
 %
 %TRUE/REFERENCE solution
 iter=1;
-opts_true = odeset('RelTol',1e-14,'AbsTol',1e-16,'Jacobian',derf);
+opts_true = odeset('RelTol',1e-14,'AbsTol',1e-16);
 tstart=tic;
 sol_true=ode15s(f,[t0,tf],u0,opts_true);
 timetrue=toc(tstart);
@@ -37,6 +37,7 @@ stepstrue=length(sol_true.x); %number of steps computed
 %
 tspan=sol_true.x; % the dense output time tspan (used for comparison)
 utrue=sol_true.y;
+%
 %call RPNN
 optsRPNN.RelTol=reltolRPNN;
 optsRPNN.AbsTol=abstolRPNN;
@@ -51,18 +52,6 @@ stepsRPNN=info.num_steps; %number of steps computed
 %
 %odesuit
 opts=odeset('RelTol',reltolODE,'AbsTol',abstolODE,'Jacobian',derf);
-%ode45
-cond45=(mu<=100); %call ode45 ONLY IF NOT SO STIFF
-if cond45
-    %ode45
-    tstart=tic;
-    sol45=ode45(f,[t0,tf],u0,opts);
-    u45=deval(sol45,tspan);
-    time45=toc(tstart); %execution times
-    L2err45=norm(u45-utrue,2);
-    err45=abs(u45-utrue);
-    steps45=length(sol45.x); %number of steps computed
-end
 %call ode15s
 tstart=tic;
 sol15s=ode15s(f,[t0,tf],u0,opts);
@@ -79,7 +68,18 @@ time23t=toc(tstart); %execution times
 L2err23t=norm(u23t-utrue,2);
 err23t=abs(u23t-utrue);
 steps23t=length(sol23t.x); %number of steps computed
-
+%ode45
+cond45=(2>1); %call ode45 ONLY IF NOT SO STIFF
+if cond45
+    %ode45
+    tstart=tic;
+    sol45=ode45(f,[t0,tf],u0,opts);
+    u45=deval(sol45,tspan);
+    time45=toc(tstart); %execution times
+    L2err45=norm(u45-utrue,2);
+    err45=abs(u45-utrue);
+    steps45=length(sol45.x); %number of steps computed
+end
             
 %FIGURES
 for i=1:nEq
