@@ -298,7 +298,7 @@ while tf-tk1>100*eps(tk1)
                 dwre=spqr_solve(J',Gre', struct('solution','min2norm'));
                 num_Jac_solv=num_Jac_solv+1;
             elseif method==1
-                if nEq<5
+                if nEq<8
                     dwre=Gre*invJ; %implicit -G (G*=eqn-u_t=-G)
                 else
                     dwre=Gre/dA;
