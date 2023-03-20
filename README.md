@@ -7,7 +7,7 @@ We present a numerical method based on ``random projections`` with ``Gaussian ke
 
 The efficiency of the scheme is compared against two stiff ODEs/DAEs solvers, namely the ``ode15s`` and the ``ode23t`` solvers of the MATLAB ODE suite.
 
-https://doi.org/10.48550/arXiv.2203.05337
+For a further comparison also with deepxde python library, see https://doi.org/10.48550/arXiv.2203.05337
 
 
 # Matlab Examples
