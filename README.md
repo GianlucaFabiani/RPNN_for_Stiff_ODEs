@@ -46,7 +46,7 @@ To run the examples call <file>_main.m
   OUTPUTS: Each column in the solution array YOUT corresponds
   to a time returned in the row vector TOUT.
  
-  [TOUT,YOUT] = ode15s(ODEFUN,TSPAN,Y0,OPTIONS) solves as above with default
+  [TOUT,YOUT] = ada_RPNN_DAE(ODEFUN,TSPAN,Y0,OPTIONS) solves as above with default
   integration properties replaced by values in OPTIONS (struct with fields)
   Commonly used options are relative error tolerance 'RelTol'
   (1e-3 by default) and absolute error tolerances 'AbsTol' (1e-6 by default);
@@ -71,4 +71,4 @@ To run the examples call <file>_main.m
   INFO.num_Jac_solv: number of jacobian inversions(pinv/QR decompositions)
 
 # Jac_Create and Jac_Create_Sparse
-Are two auxiliary subroutines, written in .c and implemented in Matlab by mex, for constructing the Jacobian matrix of the Newton iterations.
+Are two auxiliary subroutines, written in .c and implemented in Matlab by mex, for constructing the Jacobian matrix (w.r.t to the weights of the RPNN) of the Newton iterations.
