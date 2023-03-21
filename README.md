@@ -1,5 +1,8 @@
 # Physics-Informed Random Projection Neural Networks for the Numerical Solution of Stiff ODEs and DAEs
-Physics Informed Random Projection Neural Network for solving Stiff ODEs and DAEs
+
+If you use or modify for research purposes this software, please cite it as below:
+
+Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 2023.
 
 Last revised by G. Fabiani, March 15, 2023
 
