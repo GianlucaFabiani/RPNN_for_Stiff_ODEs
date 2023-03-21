@@ -1,6 +1,6 @@
 # Random Projection PINNs for the Numerical Solution of Stiff ODEs and DAEs
 
-*If you use or modify for research purposes this software, please cite it as below:*
+*If you use or modify for research purposes this software, please cite our paper as below:*
 
 &#x1F4D8; **Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 2023.**
 
