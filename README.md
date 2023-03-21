@@ -1,4 +1,4 @@
-# Random Projection Machine Learning for the numerical solution of Stiff ODEs and DAEs
+# Random Projection Machine Learning for the Numerical Solution of Stiff ODEs and DAEs
 Physics Informed Random Projection Neural Network for solving Stiff ODEs and DAEs
 
 Last revised by G. Fabiani, March 15, 2023
