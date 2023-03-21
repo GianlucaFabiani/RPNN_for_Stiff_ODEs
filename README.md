@@ -1,6 +1,6 @@
 # Random Projection PINNs for the Numerical Solution of Stiff ODEs and DAEs
 
-If you use or modify for research purposes this software, please cite it as below:
+*If you use or modify for research purposes this software, please cite it as below:*
 
 **Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 2023.**
 
@@ -17,10 +17,10 @@ For more details and examples, download our paper from https://doi.org/10.48550/
 
 The main function is ada_RPNN_DAE.m (Adaptive time step solver for both ODEs and DAEs)
 
-Here we have 4 example:
-1) van der Pol Equations (vdpp.m)
-2) Lotka-Volterra ODEs  (LotkaVolterra.m) [as proposed in deepxde python library]
-3) Robertson DAEs (Robertson_DAE.m)
+Here, we provide 4 examples/demos:
+1) The van der Pol Equations (vdpp.m)
+2) The Lotka-Volterra ODEs  (LotkaVolterra.m) [as proposed in deepxde python library]
+3) The Robertson index-1 DAEs (Robertson_DAE.m)
 4) A mechanics non autonomous index-1 DAEs model (ex11ode.m) [part of the benchmark problems presented in Shampine (1999), Solving Index-1 DAEs in MATLAB and Simulink]
 
 The ODEs function handles are defined in their respective <file>.m and their Jacobian in <file>_jac.m
