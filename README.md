@@ -10,7 +10,7 @@ We present a numerical method based on ``random projections`` with ``Gaussian ke
 
 The efficiency of the scheme is compared against two stiff ODEs/DAEs solvers, namely the ``ode15s`` and the ``ode23t`` solvers of the MATLAB ODE suite but also with DeepXDE python library (https://github.com/lululxvi/deepxde) that implements deep-learning PINNs.
 
-For more details and examples, download our paper from https://doi.org/10.48550/arXiv.2203.05337
+For more details and examples, see in https://doi.org/10.48550/arXiv.2203.05337
 
 
 # Matlab Examples
