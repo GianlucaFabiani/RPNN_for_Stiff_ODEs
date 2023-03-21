@@ -8,9 +8,9 @@ Last revised by G. Fabiani, March 15, 2023
 
 We present a numerical method based on ``random projections`` with ``Gaussian kernels`` and ``physics-informed neural networks`` for the solution of initial value problems (IVP) of nonlinear STIFF ODEs and index-1 DAEs, which may also arise from the spatial discretization of PDEs.
 
-The efficiency of the scheme is compared against two stiff ODEs/DAEs solvers, namely the ``ode15s`` and the ``ode23t`` solvers of the MATLAB ODE suite but also with DeepXDE python library that implements deep-learning PINNs.
+The efficiency of the scheme is compared against two stiff ODEs/DAEs solvers, namely the ``ode15s`` and the ``ode23t`` solvers of the MATLAB ODE suite but also with DeepXDE python library (https://github.com/lululxvi/deepxde) that implements deep-learning PINNs.
 
-For more details, see https://doi.org/10.48550/arXiv.2203.05337
+For more details and examples, download our paper from https://doi.org/10.48550/arXiv.2203.05337
 
 
 # Matlab Examples
