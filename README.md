@@ -23,8 +23,8 @@ Here, we provide 4 examples/demos:
 3) The Robertson index-1 DAEs (Robertson_DAE.m)
 4) A mechanics non autonomous index-1 DAEs model (ex11ode.m) [part of the benchmark problems presented in Shampine (1999), Solving Index-1 DAEs in MATLAB and Simulink]
 
-The ODEs function handles are defined in their respective <file>.m and their Jacobian in <file>_jac.m
-To run the examples call <file>_main.m
+The ODEs function handles are defined in their respective "file".m and their Jacobian in "file"_jac.m
+To run the examples call "file"_main.m
 
 # Documentation of the Code
   
