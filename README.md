@@ -88,7 +88,7 @@ where now $\boldsymbol{f}: \mathbb{R} \times \mathbb{R}^{m-l} \times \mathbb{R}^
   in the form M*dydt=f(t,y)
  
   As output one can also get a third argument for info about the computations
-  [TOUT,YOUT,INFO] = ode15s(ODEFUN,TSPAN,Y0,OPTIONS)
+  [TOUT,YOUT,INFO] = ada_RPNN_DAE(ODEFUN,TSPAN,Y0,OPTIONS)
   INFO.accept: number of accepted adaptive steps
   INFO.reject: number of rejected adaptive steps
   INFO.exec_time: execution time
