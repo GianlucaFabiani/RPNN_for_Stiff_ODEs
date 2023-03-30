@@ -96,5 +96,5 @@ where now $\boldsymbol{f}: \mathbb{R} \times \mathbb{R}^{m-l} \times \mathbb{R}^
   INFO.num_fun_eval: number of function evaluations
   INFO.num_Jac_solv: number of jacobian inversions(pinv/QR decompositions)
 
-# Jac_Create and Jac_Create_Sparse
-Are two auxiliary subroutines, written in .c and implemented in Matlab by mex, for constructing the Jacobian matrix (w.r.t to the weights of the RPNN) of the Newton iterations.
+# Auxiliary functions
+"Jac_Create.m" and "Jac_Create_Sparse.m" are two auxiliary subroutines, written in C (Programming Language) that can be run in MATLAB as a MEX file, for constructing the "big" Jacobian matrix (w.r.t to the weights of the RPNN) of the Newton iterations.
