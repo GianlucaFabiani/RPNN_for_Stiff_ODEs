@@ -15,6 +15,9 @@ Key words: ordinary differential equations (ODEs), differential algebraic equati
 
 For more details and examples, see in https://doi.org/10.48550/arXiv.2203.05337
 
+DISCLAIMER:
+This software is provided "as is" without warranty of any kind.
+
 
 # Matlab Examples
 
@@ -31,31 +34,21 @@ To run the examples call "file"_main.m
 
 # Description of the Problem
 Here, we consider initial-value problems (IVPs) of ODEs and index-1 DAEs that may also arise from the spatial discretization of PDEs using for example finite differences, finite elements and spectral methods. In particular, we consider IVPs in the linear implicit form of:
-\begin{equation}\label{eq:DAE}
-  \begin{array}{lll}
-\boldsymbol{M}\dfrac{d\boldsymbol{u}(t)}{dt}  =  \boldsymbol{f}(t,\boldsymbol{u}(t)), \qquad
-      \boldsymbol{u}(0)  =  \boldsymbol{z}.
-   \end{array} 
-\end{equation}
-$\boldsymbol{u}\in \mathbb{R}^{m}$ denotes the set of the states $\{u_1, u_2, \dots, u_i,\dots,  u_m\}$, $\boldsymbol{M}\in \mathbb{R}^{m\times m}$ is the so-called mass matrix with elements $M_{ij}$,
+
+$\boldsymbol{M}\dfrac{d\boldsymbol{u}(t)}{dt}  =  \boldsymbol{f}(t,\boldsymbol{u}(t)), \qquad \boldsymbol{u}(0)  =  \boldsymbol{z}. $
+
+$\boldsymbol{u}\in \mathbb{R}^{m}$ denotes the set of the states $(u_1, u_2, \dots, u_i,\dots,  u_m)$ , $\boldsymbol{M}\in \mathbb{R}^{m\times m}$ is the so-called mass matrix with elements $M_{ij}$,
 $\boldsymbol{f}: D\subseteq\mathbb{R} \times \mathbb{R}^m \to \mathbb{R}^m$ denotes a Lipschitz continuous multivariate function, with components $f_i(t, u_1,u_2,\dots,u_m)$ defined in a closed domain $D$, and $\boldsymbol{z}\in \mathbb{R}^{m}$ are the initial conditions.
 When $\boldsymbol{M}=\boldsymbol{I}$, the system reduces to the canonical form.
-%Thus, we assume that the Picard's Theorem \cite{collins1988differential} holds true in the interval $D$. 
-The above formulation includes problems of DAEs when $\boldsymbol{M}$ is a singular matrix, including semi-explicit DAEs in the form \cite{shampine1999solving}:
-\begin{equation}\label{eq:semiexplicitDAE}
-  \begin{array}{lll}
-       \dfrac{d\boldsymbol{u}(t)}{dt}  =  \boldsymbol{f}(t, \boldsymbol{u}(t),\boldsymbol{v}(t)), \quad \boldsymbol{u}(0)  =  \boldsymbol{z}, \\
-       \boldsymbol{0}=\boldsymbol{g}(t,\boldsymbol{u}(t),\boldsymbol{v}(t)),
-   \end{array} 
-\end{equation}
+
+The above formulation includes problems of DAEs when $\boldsymbol{M}$ is a singular matrix, including semi-explicit DAEs in the form:
+
+$\dfrac{d\boldsymbol{u}(t)}{dt}  =  \boldsymbol{f}(t, \boldsymbol{u}(t),\boldsymbol{v}(t)), \quad \boldsymbol{u}(0)  =  \boldsymbol{z}, \boldsymbol{0}=\boldsymbol{g}(t,\boldsymbol{u}(t),\boldsymbol{v}(t)), $
+
 where now $\boldsymbol{f}: \mathbb{R} \times \mathbb{R}^{m-l} \times \mathbb{R}^{l}\to \mathbb{R}^{m-l} \mbox{)}$, $\boldsymbol{g}: \mathbb{R} \times \mathbb{R}^{m-l} \times \mathbb{R}^{l}\to \mathbb{R}^{l}$ and we assume that the Jacobian $\nabla_{\boldsymbol{v}} \boldsymbol{g}$ is nonsingular.
 
 
 # Documentation of the Code
-  
-  DISCLAIMER:
-  This software is provided "as is" without warranty of any kind.
-
   We provide an user-friendly and MATLAB-friendly software for solving ordinary differential equations (ODEs) and index-1 differential-algebraic equations (DAEs)
   using Physics-informed Random Projection Neural Network (PIRPNN). The RPNN algorithm is a fast and efficient machine learning algorithm for function approximation.
   The code supports both single and multi-dimensional systems. It allows the user to easily specify the function handle, time interval and initial condition, preserving the same structure of the MATLAB ODE suite. The user can also provide an analytical Jacobian and, in case of a DAEs, a mass matrix. 
