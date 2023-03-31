@@ -1,4 +1,4 @@
-# RAND-DIFFESOL-NET TOOLBOX
+# RANDIFFNET TOOLBOX
 # Random Projection PINNs for the Numerical Solution of Stiff ODEs and DAEs
 
 *If you use or modify for research purposes this software, please cite our paper and software as below:*
