@@ -3,7 +3,7 @@
 
 *If you use or modify for research purposes this software, please cite our paper as below:*
 
-&#x1F4D8; Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 33, 2023. Doi: 10.1063/5.0135903
+&#x1F4D8;** Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 33, 2023. Doi: 10.1063/5.0135903 **
 
 Last revised by G. Fabiani, March 30, 2023
 
