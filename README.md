@@ -3,13 +3,13 @@
 
 *If you use or modify for research purposes this software, please cite our paper as below:*
 
-&#x1F4D8;**Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 33(4), 2023. Doi: 10.1063/5.0135903** \url{https://doi.org/10.1063/5.0135903}
+&#x1F4D8;**Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 33(4), 2023. Doi: [10.1063/5.0135903](https://doi.org/10.1063/5.0135903)** 
 
 Last revised by G. Fabiani, March 30, 2023
 
 We present a numerical method based on ``random projections`` with ``Gaussian kernels`` and ``physics-informed neural networks`` for the solution of initial value problems (IVP) of nonlinear STIFF ODEs and index-1 DAEs, which may also arise from the spatial discretization of PDEs.
 
-The efficiency of the scheme is compared against two stiff ODEs/DAEs solvers, namely the ``ode15s`` and the ``ode23t`` solvers of the MATLAB ODE suite but also with DeepXDE python library (https://github.com/lululxvi/deepxde) that implements deep-learning PINNs.
+The efficiency of the scheme is compared against two stiff ODEs/DAEs solvers, namely the ``ode15s`` and the ``ode23t`` solvers of the MATLAB ODE suite but also with [DeepXDE python library](https://github.com/lululxvi/deepxde) that implements deep-learning PINNs.
 
 Key words: ordinary differential equations (ODEs), differential algebraic equations (DAEs), stiff systems, Random Projection Neural Network (RPNNs), RanDiffNet
 
@@ -26,7 +26,7 @@ Here, we provide 4 examples/demos:
 1) The van der Pol Equations (vdpp.m)
 2) The Lotka-Volterra ODEs  (LotkaVolterra.m) [as proposed in deepxde python library]
 3) The Robertson index-1 DAEs (Robertson_DAE.m)
-4) A mechanics non autonomous index-1 DAEs model (ex11ode.m) [part of the benchmark problems presented in Shampine (1999), Solving Index-1 DAEs in MATLAB and Simulink]
+4) A mechanics non autonomous index-1 DAEs model (ex11ode.m) [part of the benchmark problems presented in Shampine LF et al. (1999), Solving Index-1 DAEs in MATLAB and Simulink, SIAM review, 41(3)]
 
 The ODEs function handles are defined in their respective "file".m and their Jacobian in "file"_jac.m
 To run the examples call "file"_main.m
