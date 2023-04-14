@@ -20,7 +20,7 @@ This software is provided "as is" without warranty of any kind.
 
 # Matlab Examples
 
-The main function is ada_RPNN_DAE.m (Adaptive time step solver for both ODEs and DAEs)
+The main function (i.e. the solver) is ada_RPNN_DAE.m (Adaptive time step solver for both ODEs and DAEs)
 
 Here, we provide 4 examples/demos:
 1) The van der Pol Equations (vdpp.m)
@@ -28,8 +28,8 @@ Here, we provide 4 examples/demos:
 3) The Robertson index-1 DAEs (Robertson_DAE.m)
 4) A mechanics non autonomous index-1 DAEs model (ex11ode.m) [part of the benchmark problems presented in Shampine LF et al. (1999), Solving Index-1 DAEs in MATLAB and Simulink, SIAM review, 41(3)]
 
-The ODEs function handles are defined in their respective "file".m and their Jacobian in "file"_jac.m
-To run the examples call "file"_main.m
+The ODEs function handles are defined in their respective "name_example".m and their Jacobian in "name_example"_jac.m
+To run the examples call "name_example"_main.m
 
 # Description of the Problem
 Here, we consider initial-value problems (IVPs) of ODEs and index-1 DAEs that may also arise from the spatial discretization of PDEs using for example finite differences, finite elements and spectral methods. In particular, we consider IVPs in the linear implicit form of:
