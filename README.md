@@ -5,7 +5,7 @@
 
 &#x1F4D8;**Fabiani, G., Galaris, E., Russo, L., Siettos, C., Parsimonious Physics-Informed Random Projection Neural Networks for Initial Value Problems of ODEs and index-1 DAEs. Chaos, 33(4), 2023. Doi: [10.1063/5.0135903](https://doi.org/10.1063/5.0135903)** 
 
-Last revised by G. Fabiani, March 30, 2023
+Last revised by G. Fabiani, April 14, 2023
 
 We present a numerical method based on ``random projections`` with ``Gaussian kernels`` and ``physics-informed neural networks`` for the solution of initial value problems (IVP) of nonlinear STIFF ODEs and index-1 DAEs, which may also arise from the spatial discretization of PDEs.
 
