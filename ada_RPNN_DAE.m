@@ -22,13 +22,13 @@ function [tt_tot,uu_tot,info]=ada_RPNN_DAE(f,tspan,y0,opts)
 % OUTPUTS: Each column in the solution array YOUT corresponds
 % to a time returned in the row vector TOUT.
 %
-% [TOUT,YOUT] = ode_RPNN_DAE(ODEFUN,TSPAN,Y0,OPTIONS) solves as above with default
+% [TOUT,YOUT] = ada_RPNN_DAE(ODEFUN,TSPAN,Y0,OPTIONS) solves as above with default
 % integration properties replaced by values in OPTIONS (struct with fields)
 % Commonly used options are relative error tolerance 'RelTol'
 % (1e-3 by default) and absolute error tolerances 'AbsTol' (1e-6 by default);
 %
 % As output one can also get a third argument for info about the computations
-% [TOUT,YOUT,INFO] = ode_RPNN_DAE(ODEFUN,TSPAN,Y0,OPTIONS)
+% [TOUT,YOUT,INFO] = ada_RPNN_DAE(ODEFUN,TSPAN,Y0,OPTIONS)
 % INFO.accept: number of accepted adaptive steps
 % INFO.reject: number of rejected adaptive steps
 % INFO.exec_time: execution time
